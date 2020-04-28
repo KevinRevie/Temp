@@ -1,0 +1,53 @@
+
+.template-collection h1, .device-destruction h1 {font-size:24px;}
+.laptopguyimg {background-image: url(/images/IllustrationGuyHoldingLaptop.svg);
+    background-repeat: no-repeat;background-position: bottom right;background-size: 172px;
+    padding-bottom: 30px;min-height:322px;}
+.htmltemplate a {text-decoration:underline;}
+.htmltemplate a:hover {text-decoration:none;}
+hr {margin: 30px auto;border: 0;border-bottom: 4px solid #ff8136;width: 90%;}
+.subpage h2.active, .subpage h2.completed {text-align:center;font-size:24px;padding-top:40px;font-weight: 400;}
+.subpage h2.active {color:#ff8136;}
+.subpage h2.completed {color:#24588d;padding-top: 60px;}
+.ordertable {border-bottom:2px solid #979797;}
+.ordercolumn, .ordercolumnheader {padding-left: 3px;}
+.datarow .ordercolumn {border-right:1px solid #979797;}
+.column-title {font-size:20px;font-weight:bold;}
+.checked {padding-right: 30px;}
+.datarow > div {border-top: 2px solid #979797;padding-top: 12px;padding-bottom: 15px;}
+.checktext {font-size:13px;color:#979797;line-height: 17px;}
+.fa-check-circle, .fa-circle {color:#ff8136;font-size: 22px;}
+.downloadlinkwrapper {display:inline-block;}
+.splitter {border-right:1px solid #ff8136;width: 1px;height: 16px;display: inline-block;padding-right: 20px;margin-right: 20px;}
+.fa-arrow-alt-circle-down{font-size: 16px;display: inline-block;padding-left: 8px;}
+.completedate {font-size: 15px;font-weight: 100;margin-left: 10px;}
+.stat {color:#24588d;font-size:50px;font-weight:bold;line-height: 51px;}
+.stat-wrapper .title {font-weight: 500;}
+.stat-type {font-size:20px;font-weight:bold;}
+.stat-wrapper {padding-top:30px;}
+
+@media only screen and (max-width: 991px) {
+    .laptopguyimg {background-image:none;}
+    .laptopguyimgsm {background-image: url(/images/IllustrationGuyHoldingLaptop.svg);
+        background-repeat: no-repeat;background-position: center right;background-size: 172px;
+        padding-bottom: 30px;min-height:322px;}
+    hr {width: 100%;}
+}
+@media only screen and (max-width: 767px) {
+    .datarow .ordercolumn {border-right: none;}
+    .ordercolumn, .ordercolumnheader {padding-left: 15px;}
+    .datarow > div {border-top: none;}
+    .datarow .ordercolumn {border-top: 2px solid #979797;}
+    .headerrow {display:none;}
+    .ordertable {margin-left: 15px;margin-right: 15px;}
+    .splitter {border-right:none;display:block;height: 3px;}
+}
+@media only screen and (max-width: 575px) {
+    .subpage .sitelogo {padding-top: 20px;padding-bottom: 20px;}
+}
+@media only screen and (max-width: 767px) {
+    .checked {width: 150px;padding-top:10px;}
+}
+@media only screen and (max-width: 370px) {
+    .laptopguyimgsm {background-image:none;}
+}
