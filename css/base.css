@@ -1,10 +1,12 @@
 
-.template-collection h1, .device-destruction h1 {font-size:24px;}
+.template-collection h1,.device-destruction h1 {font-size:24px;line-height: 33px;}
 .laptopguyimg {background-image: url(/images/IllustrationGuyHoldingLaptop.svg);
     background-repeat: no-repeat;background-position: bottom right;background-size: 172px;
     padding-bottom: 30px;min-height:322px;}
 .htmltemplate a {text-decoration:underline;}
 .htmltemplate a:hover {text-decoration:none;}
+.htmltemplate footer li a {text-decoration:none;}
+.htmltemplate footer li a:hover {text-decoration:underline;}
 .htmltemplate .imgbtnlnk {text-decoration: none;}
 hr, .tablewrapper {margin: 30px auto;width: 90%;}
 hr {border: 0;border-bottom: 4px solid #ff8136;}
@@ -32,8 +34,28 @@ hr {border: 0;border-bottom: 4px solid #ff8136;}
 .tablewrapper .row.datarow div {border-right: 1px solid #979797;}
 .tablewrapper .row.datarow div:last-child {border-right: none;}
 .tablewrapper .datarow:last-child {border-bottom: 2px solid #979797;}
+.environmental-impact-summary .col-header {display:inline-block;width:32%;color:#24588D;font-weight:bold;text-align: right;padding-right: 20px;}
+.environmental-impact-summary .col-column {display:inline-block;width:29%;}
+.environmental-impact-summary .col-column strong {display:inline-block;width:40%;text-align:right;padding-right: 5px;}
+.environmental-impact-summary .tablewrapper.toptablewrapper .datarow div {border-top: none;border-right: none;border-bottom: 1px solid #979797;padding-left:0;padding-right:0;}
+.environmental-impact-summary .tablewrapper.toptablewrapper .datarow:last-child {border-bottom: none;}
+.environmental-impact-summary .tablewrapper.toptablewrapper .datarow:first-child div {border-top: 1px solid #979797;}
+.environmental-impact-summary .tablewrapper.bottomwrapper .datarow div {border-top: none;border-right: 1px solid #E2E8F1;border-bottom: 1px solid #E2E8F1;}
+.environmental-impact-summary .tablewrapper.bottomwrapper .datarow div:last-child {border-right: none;}
+.environmental-impact-summary .tablewrapper.bottomwrapper .datarow-wrapper {border-bottom: 1px solid #979797;border-top: 1px solid #979797;}
+.environmental-impact-summary .tablewrapper.bottomwrapper .datarow:last-child {border-bottom: none;}
+.environmental-impact-summary .col-reuse, .environmental-impact-summary .col-recycle, .environmental-impact-summary .col-total {text-align:right;}
+.environmental-impact-summary .col-center {text-align:center;}
+.environmental-impact-summary .row-bold {font-weight:bold;}
+.environmental-impact-summary .row-blue{background-color:rgba(226,232,241,0.3);}
+.environmental-impact-summary .topstat .stat {font-size:60px;color:#FF8136;}
+hr.blue {border-bottom:1px solid #E2E8F1;}
+.environmental-impact-summary .tablewrapper.toptablewrapper {padding-top:30px;}
+.template-collection .h1, h2.showmid {text-align:center;font-size:20px;line-height:24px;text-transform: none;}
 
+.showmid {display: none;}
 @media only screen and (max-width: 991px) {
+    .showmid {display: block;}
     .laptopguyimg {background-image:none;}
     .laptopguyimgsm {background-image: url(/images/IllustrationGuyHoldingLaptop.svg);
         background-repeat: no-repeat;background-position: center right;background-size: 172px;
@@ -52,6 +74,18 @@ hr {border: 0;border-bottom: 4px solid #ff8136;}
     .tablewrapper .row.datarow div.col-internal-id:before {content:" ";}
     .tablewrapper .row.datarow div.col-date:before {content:"Date:";}
     .tablewrapper .row.datarow div.col-technician:before {content: "Technician:";}
+    .tablewrapper .row.datarow div.col-reuse:before {content: "Reuse:";}
+    .tablewrapper .row.datarow div.col-recycle:before {content: "Recycle:";}
+    .tablewrapper .row.datarow div.col-total:before {content: "Total:";}
+    .environmental-impact-summary .col-reuse, .environmental-impact-summary .col-recycle, .environmental-impact-summary .col-total {
+        text-align: left;}
+    .environmental-impact-summary .tablewrapper.toptablewrapper {margin-top: 0;}
+    .environmental-impact-summary .tablewrapper.toptablewrapper .datarow:first-child div {border-top: none;}
+    .environmental-impact-summary .tablewrapper.bottomwrapper .datarow div {border-bottom:none;border-right:none;}
+    .environmental-impact-summary .tablewrapper.toptablewrapper .datarow div {border-top: none;border-bottom: 1px solid #E2E8F1;}
+    .environmental-impact-summary .tablewrapper.toptablewrapper .row.datarow {border-bottom:none;border-right:none;}
+    .environmental-impact-summary .tablewrapper.toptablewrapper {padding-top:0;}
+    .environmental-impact-summary .col-header {display: block;text-align: left;}
 }
 @media only screen and (max-width: 767px) {
     .datarow .ordercolumn {border-right: none;}
