@@ -31,7 +31,6 @@ hr {border: 0;border-bottom: 4px solid #ff8136;}
 .tablewrapper .row.datarow div {border-right: 1px solid #979797;}
 .tablewrapper .row.datarow div:last-child {border-right: none;}
 .tablewrapper .datarow:last-child {border-bottom: 2px solid #979797;}
-.descrow .text-center{text-align:left !important;}
 
 @media only screen and (max-width: 991px) {
     .laptopguyimg {background-image:none;}
@@ -41,6 +40,7 @@ hr {border: 0;border-bottom: 4px solid #ff8136;}
     hr, .tablewrapper {width: 100%;}
     .tablewrapper .headerrow {display:none;}
     
+    .descrow .text-center{text-align:left !important;}
     .tablewrapper {margin-top: -30px;}
     .tablewrapper .row.datarow {border-bottom: 2px solid #979797;}
     .tablewrapper .row.datarow div {border-right: none;border-bottom: 1px solid #979797;border-top:none;}
