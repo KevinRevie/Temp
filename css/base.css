@@ -5,7 +5,8 @@
     padding-bottom: 30px;min-height:322px;}
 .htmltemplate a {text-decoration:underline;}
 .htmltemplate a:hover {text-decoration:none;}
-hr {margin: 30px auto;border: 0;border-bottom: 4px solid #ff8136;width: 90%;}
+hr, .tablewrapper {margin: 30px auto;width: 90%;}
+hr {border: 0;border-bottom: 4px solid #ff8136;}
 .subpage h2.active, .subpage h2.completed {text-align:center;font-size:24px;padding-top:40px;font-weight: 400;}
 .subpage h2.active {color:#ff8136;}
 .subpage h2.completed {color:#24588d;padding-top: 60px;}
@@ -24,14 +25,32 @@ hr {margin: 30px auto;border: 0;border-bottom: 4px solid #ff8136;width: 90%;}
 .stat {color:#24588d;font-size:50px;font-weight:bold;line-height: 51px;}
 .stat-wrapper .title {font-weight: 500;}
 .stat-type {font-size:20px;font-weight:bold;}
-.stat-wrapper {padding-top:30px;}
+.descrow, .stat-wrapper {padding-top:30px;}
+.tablewrapper .row {margin-right: 0;margin-left: 0;}
+.tablewrapper .row.headerrow div {font-weight:bold;padding-top: 12px;padding-bottom: 15px;}
+.tablewrapper .row.datarow div {border-right: 1px solid #979797;}
+.tablewrapper .row.datarow div:last-child {border-right: none;}
+.tablewrapper .datarow:last-child {border-bottom: 2px solid #979797;}
+.descrow .text-center{text-align:left !important;}
 
 @media only screen and (max-width: 991px) {
     .laptopguyimg {background-image:none;}
     .laptopguyimgsm {background-image: url(/images/IllustrationGuyHoldingLaptop.svg);
         background-repeat: no-repeat;background-position: center right;background-size: 172px;
         padding-bottom: 30px;min-height:322px;}
-    hr {width: 100%;}
+    hr, .tablewrapper {width: 100%;}
+    .tablewrapper .headerrow {display:none;}
+    
+    .tablewrapper {margin-top: -30px;}
+    .tablewrapper .row.datarow {border-bottom: 2px solid #979797;}
+    .tablewrapper .row.datarow div {border-right: none;border-bottom: 1px solid #979797;border-top:none;}
+    .tablewrapper .row.datarow div:last-child {border-bottom: none;}
+    .tablewrapper .row.datarow div:before {width: 115px;font-weight: bold;display: inline-block;}
+    .tablewrapper .row.datarow div.col-hta-number:before {content:"HTA Number:";}
+    .tablewrapper .row.datarow div.col-serial-number:before {content:"Serial Number:";}
+    .tablewrapper .row.datarow div.col-internal-id:before {content:" ";}
+    .tablewrapper .row.datarow div.col-date:before {content:"Date:";}
+    .tablewrapper .row.datarow div.col-technician:before {content: "Technician:";}
 }
 @media only screen and (max-width: 767px) {
     .datarow .ordercolumn {border-right: none;}
